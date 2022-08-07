@@ -1,0 +1,17 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination li{
+  list-style-type: none;
+  padding: 0px 5px;
+} 
+
+.pagination .active {
+  color: var(--color-pink);
+}
+
+.pagination li:not(:last-child) a {
+  font-size: var(--font-small);
+}

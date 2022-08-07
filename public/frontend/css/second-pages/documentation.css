@@ -1,0 +1,25 @@
+.documentation {
+  font-size: var(--font-thin);
+  color: var(--color-txt);
+}
+
+.documentation h1,
+.documentation h2,
+.documentation h3,
+.documentation h4,
+.documentation span {
+  color: var(--color-default);
+}
+
+.documentation h1 {
+  margin: 30px 0;
+}
+
+.documentation p:last-child {
+  margin-bottom: 40px;
+}
+
+.documentation li {
+  list-style-type: "- ";
+  margin-left: 40px;
+}

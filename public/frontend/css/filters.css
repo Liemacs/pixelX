@@ -1,0 +1,164 @@
+/* sortBy */
+
+select {
+  /* Reset Select */
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  /* Personalize */
+  flex: 1;
+  padding: 0 1em;
+  color: #fff;
+  background-color: var(--color-bg);
+  background-image: none;
+  cursor: pointer;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select wrapper */
+.select {
+  position: relative;
+  display: flex;
+  height: 3em;
+  overflow: hidden;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5em 1em;
+  background-color: var(--color-bg);
+  transition: .25s all ease;
+  pointer-events: none;
+}
+/* Transition */
+.select:hover::after {
+  color: #f39c12;
+}
+
+/* sortBy */
+
+/* Filters */
+.categories-sidebar,
+.brands-sidebar  {
+  overflow: auto;
+  max-height: 350px;
+}
+.panel-group {
+  margin-top: 20px;
+}
+
+.panel-default {
+  color: var(--color-default);
+}
+
+.panel-heading {
+  padding: 0;
+  border: 0;
+}
+
+.panel-collapse {
+  margin-top: 15px;
+  flex-direction: column;
+}
+.panel-title,
+.panel-collapse,
+.filters {
+  display: flex;
+  justify-content: space-between;
+}
+.panel-title > a,
+.panel-title > a:active {
+  display: block;
+  padding: 5px 10px;
+  font-size: var(--font-small);
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  text-decoration: none;
+}
+
+.panel-title > a i {
+  font-size: var(--font-large);
+}
+
+.active-filter {
+  display: none;
+}
+
+/* Filters */
+
+/* range slider */
+.range-slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.range-slider input {
+  pointer-events: none;
+  position: absolute;
+  overflow: hidden;
+  width: 200px;
+  outline: none;
+  height: 18px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.range-slider button {
+  margin-top: 30px;
+}
+
+.range-slider input::-webkit-slider-thumb {
+  pointer-events: all;
+  position: relative;
+  z-index: 1;
+  outline: 0;
+}
+
+.range-slider input::-moz-range-thumb {
+  pointer-events: all;
+  position: relative;
+  z-index: 10;
+  -moz-appearance: none;
+  width: 9px;
+}
+
+.range-slider input::-moz-range-track {
+  position: relative;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 1);
+  border: 0;
+}
+.range-slider input:last-of-type::-moz-range-track {
+  -moz-appearance: none;
+  background: none transparent;
+  border: 0;
+}
+.range-slider input[type="range"]::-moz-focus-outer {
+  border: 0;
+}
+
+/* //range slider */
+
+@media (max-width: 650px) {
+  .select {
+    display: none;
+  }
+
+  .filters {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filters > div {
+    margin-bottom: 20px;
+  }
+}

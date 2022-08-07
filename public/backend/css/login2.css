@@ -1,0 +1,184 @@
+.authentication {
+  height: 100vh;
+  background: url(../images/login-bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Card */
+.authentication .card {
+  background: transparent;
+  border-radius: 0;
+  padding: 20px 0;
+  margin: 0;
+  border: none;
+}
+
+.authentication .row {
+  margin: 0;
+}
+
+.authentication .bg-white {
+  position: relative;
+  z-index: 9;
+}
+
+#instance1 {
+  position: absolute;
+  z-index: 1;
+  height: 98vh;
+  top: 0;
+  width: 100%;
+}
+
+.l-detail {
+  position: relative;
+  z-index: 5;
+  margin-top: 50px;
+  padding: 0;
+  color: #fff;
+}
+
+.l-login {
+  padding: 0 7.5px;
+  text-transform: uppercase;
+}
+
+.l-login .msg {
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.l-detail h1 {
+  margin: 0;
+  font-size: 60px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.l-detail h1 img {
+  width: 51px;
+  vertical-align: top;
+  margin-top: 12px;
+}
+
+.l-detail h1 span {
+  font-weight: 700;
+}
+
+.l-detail h5 {
+  font-size: 20px;
+  margin: 0;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.l-detail h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  z-index: 6;
+}
+
+.l-detail p {
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 300;
+}
+
+.l-social {
+  margin-top: 5%;
+}
+
+.l-social li {
+  display: inline-block;
+}
+
+.l-social li a {
+  text-align: center;
+  padding: 10px 5px;
+}
+
+.l-social li a i {
+  font-size: 20px;
+  color: #fff;
+}
+
+.l-menu {
+  margin-top: 20px;
+}
+
+.l-menu li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.l-menu li a {
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+@media only screen and (max-width:1400px) {
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+    
+  .l-detail {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .l-detail {
+    margin-top: 15%;
+    padding: 0 0px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .l-menu {
+    margin: 30px 0;
+    position: inherit;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .authentication {
+    height: auto;
+  }
+
+  .l-detail h3 {
+    font-size: 20px;
+  }
+
+  .l-detail p {
+    font-size: 15px;
+  }
+
+  #instance1 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+}
+
+/* Keyframes */
+@-webkit-keyframes buttonFadeInUp {
+  0% {
+    bottom: 30px;
+    opacity: 0;
+  }
+}
+
+@keyframes buttonFadeInUp {
+  0% {
+    bottom: 30px;
+    opacity: 0;
+  }
+}

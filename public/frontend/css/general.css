@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+:root {
+    --color-pink: #eb22f6;
+    --color-blue: #a3effe;
+    --color-default: #f5f5f5;
+    --color-bg: #091d1e;
+    --color-btn: #ff5400;
+    --color-txt: #2B5F7E;
+
+    --font-large: 20px;
+    --font-medium: 15px;
+    --font-small: 12px;
+    --font-thin: 8px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+section {
+    margin: 50px 0;
+}
+
+body {
+    font-family: "Press Start 2P", cursive;
+    overflow-x: hidden;
+    background: var(--color-bg);
+    font-size: var(--font-small);
+}
+
+html, body{
+    height: 100%;
+}
+
+input {
+  outline: none;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    max-width: calc(1200px - 30px);
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-default);
+}
+
+.header-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.swal2-toast-shown, .swal2-shown {
+  font-size: var(--font-small);
+}
+
+.viewAll {
+  color: var(--color-default);
+  padding: 15px 20px;
+  background-color: rgba(75, 75, 75, 0.4);
+}
+
+.viewAll:hover {
+  background-color: rgba(75, 75, 75, 0.2);
+}
+
+/* Pixel effect */
+
+.pixel-corners {
+    clip-path: polygon(
+        0px 21px,
+        3px 21px,
+        3px 15px,
+        6px 15px,
+        6px 9px,
+        9px 9px,
+        9px 6px,
+        12px 6px,
+        15px 6px,
+        15px 3px,
+        18px 3px,
+        21px 3px,
+        21px 0px,
+        calc(100% - 21px) 0px,
+        calc(100% - 21px) 3px,
+        calc(100% - 15px) 3px,
+        calc(100% - 15px) 6px,
+        calc(100% - 9px) 6px,
+        calc(100% - 9px) 9px,
+        calc(100% - 6px) 9px,
+        calc(100% - 6px) 12px,
+        calc(100% - 6px) 15px,
+        calc(100% - 3px) 15px,
+        calc(100% - 3px) 18px,
+        calc(100% - 3px) 21px,
+        100% 21px,
+        100% calc(100% - 21px),
+        calc(100% - 3px) calc(100% - 21px),
+        calc(100% - 3px) calc(100% - 15px),
+        calc(100% - 6px) calc(100% - 15px),
+        calc(100% - 6px) calc(100% - 9px),
+        calc(100% - 9px) calc(100% - 9px),
+        calc(100% - 9px) calc(100% - 6px),
+        calc(100% - 12px) calc(100% - 6px),
+        calc(100% - 15px) calc(100% - 6px),
+        calc(100% - 15px) calc(100% - 3px),
+        calc(100% - 18px) calc(100% - 3px),
+        calc(100% - 21px) calc(100% - 3px),
+        calc(100% - 21px) 100%,
+        21px 100%,
+        21px calc(100% - 3px),
+        15px calc(100% - 3px),
+        15px calc(100% - 6px),
+        9px calc(100% - 6px),
+        9px calc(100% - 9px),
+        6px calc(100% - 9px),
+        6px calc(100% - 12px),
+        6px calc(100% - 15px),
+        3px calc(100% - 15px),
+        3px calc(100% - 18px),
+        3px calc(100% - 21px),
+        0px calc(100% - 21px)
+    );
+}
+
+.pixel-corners-sm {
+    clip-path: polygon(
+        0px 12px,
+        3px 12px,
+        3px 6px,
+        6px 6px,
+        6px 3px,
+        9px 3px,
+        12px 3px,
+        12px 0px,
+        calc(100% - 12px) 0px,
+        calc(100% - 12px) 3px,
+        calc(100% - 6px) 3px,
+        calc(100% - 6px) 6px,
+        calc(100% - 3px) 6px,
+        calc(100% - 3px) 9px,
+        calc(100% - 3px) 12px,
+        100% 12px,
+        100% calc(100% - 12px),
+        calc(100% - 3px) calc(100% - 12px),
+        calc(100% - 3px) calc(100% - 6px),
+        calc(100% - 6px) calc(100% - 6px),
+        calc(100% - 6px) calc(100% - 3px),
+        calc(100% - 9px) calc(100% - 3px),
+        calc(100% - 12px) calc(100% - 3px),
+        calc(100% - 12px) 100%,
+        12px 100%,
+        12px calc(100% - 3px),
+        6px calc(100% - 3px),
+        6px calc(100% - 6px),
+        3px calc(100% - 6px),
+        3px calc(100% - 9px),
+        3px calc(100% - 12px),
+        0px calc(100% - 12px)
+    );
+}
+
+.pixel-corners-lg {
+    clip-path: polygon(
+      0px 30px,
+      6px 30px,
+      6px 18px,
+      12px 18px,
+      12px 12px,
+      18px 12px,
+      18px 6px,
+      24px 6px,
+      30px 6px,
+      30px 0px,
+      calc(100% - 30px) 0px,
+      calc(100% - 30px) 6px,
+      calc(100% - 18px) 6px,
+      calc(100% - 18px) 12px,
+      calc(100% - 12px) 12px,
+      calc(100% - 12px) 18px,
+      calc(100% - 6px) 18px,
+      calc(100% - 6px) 24px,
+      calc(100% - 6px) 30px,
+      100% 30px,
+      100% calc(100% - 30px),
+      calc(100% - 6px) calc(100% - 30px),
+      calc(100% - 6px) calc(100% - 18px),
+      calc(100% - 12px) calc(100% - 18px),
+      calc(100% - 12px) calc(100% - 12px),
+      calc(100% - 18px) calc(100% - 12px),
+      calc(100% - 18px) calc(100% - 6px),
+      calc(100% - 24px) calc(100% - 6px),
+      calc(100% - 30px) calc(100% - 6px),
+      calc(100% - 30px) 100%,
+      30px 100%,
+      30px calc(100% - 6px),
+      18px calc(100% - 6px),
+      18px calc(100% - 12px),
+      12px calc(100% - 12px),
+      12px calc(100% - 18px),
+      6px calc(100% - 18px),
+      6px calc(100% - 24px),
+      6px calc(100% - 30px),
+      0px calc(100% - 30px)
+    );
+  }
+
+/* Pixel effect */
+
+/* normalize */
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+}
+
+
+/* scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    cursor: pointer;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-blue);
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-pink);
+    opacity: 0.2;
+  }
+
+/* scroll bar */

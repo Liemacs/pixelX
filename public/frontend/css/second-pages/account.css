@@ -1,0 +1,81 @@
+.account-position {
+    display: flex;
+    margin-top: 30px;
+}
+
+.sidebar-account {
+    min-width: 250px;
+    margin-right: 20px;
+    max-height: 170px;
+}
+
+.bg-account {
+    background-color: rgba(75, 75, 75, 0.4);
+    padding: 20px;
+}
+
+.sidebar-account li {
+    padding: 3px 0;
+    transition: .3s all;
+}
+.sidebar-account li a {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-account i {
+    margin-right: 7px;
+}
+
+.sidebar-account li:hover {
+    margin-left: 5px;
+}
+
+.account-form {
+    text-align: center;
+}
+
+.account-info,
+.account-img img {
+    width: 100%;
+}
+.account-box-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account-img {
+    width: 100px;
+    height: 100px;
+    margin: 10px 0;
+    overflow: hidden;  
+}
+
+.update-info {
+    margin: 20px 0;
+}
+
+.update-info label
+ {
+    text-align: left;
+    width: 165px;
+    float: left;
+}
+
+.update-info input {
+    width: calc(100% - 180px);
+    margin: 10px 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(75, 75, 75, 0.4);
+}
+
+.account-info h1,
+.account-form label {
+    color: var(--color-txt);
+}
+
+.account-form input {
+    color: var(--color-default);
+}
